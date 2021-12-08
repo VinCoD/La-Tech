@@ -58,7 +58,7 @@ body{
     color: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.read-more{
+/* .read-more{
    width: 130px;
    height: 30px;
    border: .2rem solid crimson;
@@ -83,4 +83,4 @@ body{
 .read-more:hover{
     color:blueviolet;
     background-color: crimson;
-}
+} */
