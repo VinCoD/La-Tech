@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background-color: rgba(0, 255, 255, 0.514); */
+    background-image: url('images/hill.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.upper-container{
+    display: flex;
+    flex-direction: column;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30vw;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 40px;
+    margin-left: 29%;
+    margin-right: 29%;
+    padding: 20px;
+    line-height: 6vh;
+}
+.name{
+    margin-top: 10vh;
+}
+.name input{
+    height: 5vh;
+    width: 25vw;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(255, 255, 255, 0.445);
+    font-weight: bold;
+}
+.email input{
+    margin-top: 10px;
+    height: 5vh;
+    width: 25vw;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(255, 255, 255, 0.445);
+    font-weight: bold;
+}
+.text textarea{
+    margin-top: 10px;
+    height: 30vh;
+    width: 25vw;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(255, 255, 255, 0.445);
+    font-weight: bold;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    height: 5vh;
+    background-color: transparent;
+    width: 20vw;
+    text-align: center;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease background-color;
+}
+.submit a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    
+}
+.submit:hover{
+    color:white;
+    background-color: crimson;
+}
+
+

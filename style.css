@@ -6,7 +6,12 @@
 }
 
 body{
-    background-color: rgba(0, 255, 255, 0.514);
+    /* background-color: rgba(0, 255, 255, 0.514); */
+    background-image: url('images/hill.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
 }
@@ -19,7 +24,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 450px;
+    gap: 30vw;
 }
 
 .menu ul{
@@ -58,18 +63,17 @@ body{
     color: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-/* .read-more{
+.read-more{
    width: 130px;
    height: 30px;
    border: .2rem solid crimson;
-   border-radius: 10px;
-   background-color: rgb(161, 107, 7);
    display: flex;
    justify-content: center;
    transition: 1.5s ease background-color;
    padding: 10px 30x;
    position: relative;
    left: 600px;
+   border-radius: 400px;
 }
 .read-more a{
     display: flex;
@@ -83,4 +87,4 @@ body{
 .read-more:hover{
     color:blueviolet;
     background-color: crimson;
-} */
+}
