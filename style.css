@@ -88,3 +88,21 @@ body{
     color:blueviolet;
     background-color: crimson;
 }
+
+@media screen and (max-width: 600px) {
+    *{
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0;
+    }
+    body{
+        background-image: url('images/hill.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 60%;
+    }
+
+    
+}

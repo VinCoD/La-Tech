@@ -6,7 +6,6 @@
 }
 
 body{
-    /* background-color: rgba(0, 255, 255, 0.514); */
     background-image: url('images/hill.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -52,9 +51,14 @@ body{
     padding: 20px;
     line-height: 6vh;
 }
-.name{
-    margin-top: 10vh;
+.contact h1{
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
 }
+/* .name{
+    margin-top: 10vh;
+} */
 .name input{
     height: 5vh;
     width: 25vw;
@@ -65,6 +69,11 @@ body{
     background: rgba(255, 255, 255, 0.445);
     font-weight: bold;
 }
+.name span{
+    margin-right: -30px;
+    font-weight: bolder;
+}
+
 .email input{
     margin-top: 10px;
     height: 5vh;
@@ -75,6 +84,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     background: rgba(255, 255, 255, 0.445);
     font-weight: bold;
+}
+.email span{
+    margin-right: -30px;
+    font-weight: bolder;
 }
 .text textarea{
     margin-top: 10px;
@@ -94,13 +107,12 @@ body{
     align-items: center;
     margin-bottom: 10%;
     height: 5vh;
-    background-color: transparent;
+    background-color: rgba(0, 255, 255, 0.445);
     width: 20vw;
     text-align: center;
-    border: 2px solid black;
     cursor: pointer;
     border-radius: 20px;
-    transition: .3s ease background-color;
+    transition: .5s ease background-color;
 }
 .submit a{
     text-decoration: none;
