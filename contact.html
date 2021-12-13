@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/jogo.png" type="image/x-icon">
     <title>La Tech Expertos| Contact US</title>
 </head>
 <body>
@@ -19,14 +21,13 @@
         <div class="upper-container">
             <div class="nav">
                 <div class="logo">
-                    <a href="index.html"><img src="/images/logo.png" alt="La Tech Expertos"></a>
+                    <a href="index.html"><img src="images/logo.png" alt="La Tech Expertos"></a>
                 </div>
                 <div class="menu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
                         <li><a href="developers.html">Developers</a></li>
-                        <li><a href="contact.html">Contact US</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="services.html">Services</a></li>
                     </ul>
                 </div>
@@ -35,23 +36,40 @@
 
         <div class="contact">
             <h1>Send US an email</h1>
-            <div class="name">
-                <span><i class="fa fa-user"></i></span>
-                <input type="text" name="name" id="name" placeholder="Name:">
-            </div>
-            <div class="email">
-                <span><i class="fa fa-terminal"></i></span>
-                <input type="email" name="email" id="email" placeholder="johndoe@mail.com">
-            </div>
-            <div class="text">
-                <span><i class="fa fa-message"></i></span>
-                <textarea name="text" id="text" cols="30" rows="10" placeholder="Text"></textarea>
-            </div>
-            <div class="submit" id="submit">
-                <a href="#">Submit</a>
-            </div>
+            <form action="#" method="post">
+                <div class="name">
+                    <span><i class="fa fa-user"></i></span>
+                    <input type="text" name="name" id="name" placeholder="Name:">
+                </div>
+                <div class="email">
+                    <span><i class="fa fa-terminal"></i></span>
+                    <input type="email" name="email" id="email" placeholder="johndoe@mail.com">
+                </div>
+                <div class="text">
+                    
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Text"></textarea>
+                </div>
+                
+                
+                <button type="submit" name='submit'>Submit</button>
+                
+            </form>
+            
         </div>
     </div>
+    <footer>
+        <div class="icons-footer">
+            <i class="fa fa-facebook fa-2x"></i>
+            <i class="fa fa-github fa-2x"></i>
+            <i class="fa fa-twitter fa-2x"></i>
+            <i class="fa fa-linkedin fa-2x"></i>
+            <i class="fa fa-google fa-2x"></i>
+            <i class="fa fa-youtube fa-2x"></i>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2021 <span>La Tech</span> Expertos</p>
+        </div>
+    </footer>
 
     <script src="index.js"></script>
 </body>

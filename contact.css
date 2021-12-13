@@ -1,43 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
-body{
-    background-image: url('images/hill.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-}
-
-.upper-container{
-    display: flex;
-    flex-direction: column;
-}
-.nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30vw;
-}
-
-.menu ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 50px;
-}
-
-.menu ul a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Russo One', sans-serif;
-}
 .contact{
     display: flex;
     flex-direction: column;
@@ -50,15 +10,23 @@ body{
     margin-right: 29%;
     padding: 20px;
     line-height: 6vh;
+    margin-bottom: 2vh;
 }
 .contact h1{
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
+    color: white;
 }
 /* .name{
     margin-top: 10vh;
 } */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .name input{
     height: 5vh;
     width: 25vw;
@@ -91,6 +59,7 @@ body{
 }
 .text textarea{
     margin-top: 10px;
+    margin-right: 1vw;
     height: 30vh;
     width: 25vw;
     border-radius: 20px;
@@ -101,28 +70,36 @@ body{
     font-weight: bold;
 }
 
-.submit{
+
+button{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
     height: 5vh;
-    background-color: rgba(0, 255, 255, 0.445);
+    border: none;
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
     width: 20vw;
     text-align: center;
     cursor: pointer;
     border-radius: 20px;
-    transition: .5s ease background-color;
+    transition: 1.5s ease;
 }
-.submit a{
-    text-decoration: none;
-    color:white;
-    text-transform: uppercase;
+
+button:visited{
+    border: none;
     
 }
-.submit:hover{
-    color:white;
-    background-color: crimson;
+button:visited{
+    border: none;
+}
+button:hover{
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 

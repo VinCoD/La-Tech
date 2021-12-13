@@ -1,7 +1,8 @@
-var button = document.querySelector('#submit');
+var mod = document.querySelector('body');
+var butt = document.getElementById('button')
 
-button.addEventListener("click", popFun);
+butt.addEventListener(click, modeFun);
 
-function popFun(){
-    alert("Still under Development");
+function modeFun(){
+    mod.style.backgroundColor='black';
 }

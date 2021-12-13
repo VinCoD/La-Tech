@@ -6,38 +6,41 @@
 }
 
 body{
-    /* background-color: rgba(0, 255, 255, 0.514); */
-    background-image: url('images/hill.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
+
 
 .upper-container{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30vw;
+    gap: 35%;
 }
 
 .menu ul{
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 50px;
+    gap: 2vw;
 }
 
 .menu ul a{
     text-decoration: none;
-    color: black;
-    font-family: 'Russo One', sans-serif;
+    color: white;
+    /* font-family: 'Russo One', sans-serif; */
+    font-size: 1rem;
+    padding: 2px;
+    border-radius: 10px;
 }
 
 .welcome-text{
@@ -49,6 +52,7 @@ body{
     height: 50vh;
     line-height: 2.5em;
     letter-spacing: 1rem;
+    color: white;
 
 }
 .welcome-text h1{
@@ -58,28 +62,29 @@ body{
     font-size: 25px;
 }
 .welcome-text h2 span{
-    color: #b92b27;  /* fallback for old browsers */
+    color: #b92b27; 
     color: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
     color: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
 .read-more{
-   width: 130px;
-   height: 30px;
-   border: .2rem solid crimson;
-   display: flex;
-   justify-content: center;
-   transition: 1.5s ease background-color;
-   padding: 10px 30x;
-   position: relative;
-   left: 600px;
-   border-radius: 400px;
+    height: 5vh;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #b92b27; 
+    background-color: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 2vh;
+    margin-left: 45vw;
+    cursor: pointer;
 }
 .read-more a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    color: white;
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -89,20 +94,104 @@ body{
     background-color: crimson;
 }
 
-@media screen and (max-width: 600px) {
-    *{
-        box-sizing: border-box;
-        margin: 0%;
-        padding: 0;
-    }
-    body{
-        background-image: url('images/hill.jpg');
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        height: 60%;
-    }
+.about{
+    background-image: url('images/jogo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: 0%;
+    padding: 5%;
+    line-height: 2em;
+    height: 100vh;
+}
+.about-content{
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 5%;
+    color: white;
+    height: 70vh;
+    border-radius: 20px;
+    line-height: 2em;
+
+}
+.about-content p{
+    text-align: center;
+}
+
+footer {
+    height: 15vh;
+    background-color: white;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    background-color: black;
+    color: white;
 
     
 }
+ footer i{
+    color: #ff7d27;
+    font-family: 'Montserrat', sans-serif;
+ }
+.copyright span{
+    color: #ff7d27;
+   
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(2, 4, 36);
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width:1000px) {
+      *{
+          box-sizing: border-box;
+      }
+      .upper-container{
+          width: 100%;
+      }
+      .nav{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 35%;
+      }
+      .menu ul{
+          display: none;
+          
+      }
+      .logo img{
+          margin-left: 0px;
+          height: 40px;
+          width: 120px;
+      }
+      .welcome-text h1{
+          text-transform: capitalize;
+          font-size: 1.5em;
+      }
+      .welcome-text h2{
+        font-size: 1.2rem;
+      }
+      .read-more{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      
+  }

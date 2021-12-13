@@ -1,0 +1,53 @@
+
+.developers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    gap: 15vh;
+       
+}
+.img-profile img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+
+}
+.developers h1{
+    color: white;
+}
+.p-profile p{
+    margin-top: 4vh;
+    color: white;
+}
+hr{
+    width: 70vw;
+}
+
+@media only screen and (max-width:1000px){
+    body{
+        overflow-x: hidden;
+    }
+    .profile{
+        display: flex;
+        justify-content: center;
+        gap: 5vh;
+    }
+    .img-profile img{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    
+    }
+
+    .p-profile p{
+        font-size: .8rem;
+    }
+}
+
