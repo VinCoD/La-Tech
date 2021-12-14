@@ -37,6 +37,12 @@ form{
     background: rgba(255, 255, 255, 0.445);
     font-weight: bold;
 }
+.name input:active{
+    border: none;
+}
+.name input:visited{
+    border: none;
+}
 .name span{
     margin-right: -30px;
     font-weight: bolder;
@@ -53,12 +59,19 @@ form{
     background: rgba(255, 255, 255, 0.445);
     font-weight: bold;
 }
+.email input:active{
+    border: none;
+}
+.email input:visited{
+    border: none;
+}
 .email span{
     margin-right: -30px;
     font-weight: bolder;
 }
 .text textarea{
     margin-top: 10px;
+    margin-bottom: 5vh;
     margin-right: 1vw;
     height: 30vh;
     width: 25vw;
@@ -68,6 +81,12 @@ form{
     font-family: 'Montserrat', sans-serif;
     background: rgba(255, 255, 255, 0.445);
     font-weight: bold;
+}
+.textarea textarea:active{
+    border: none;
+}
+.textarea textarea:visited{
+    border: none;
 }
 
 
@@ -89,7 +108,7 @@ button{
     transition: 1.5s ease;
 }
 
-button:visited{
+button:active{
     border: none;
     
 }
@@ -100,6 +119,37 @@ button:hover{
     background: #FC5C7D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media only screen and (max-width:700px){
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .contact{
+        margin-top: 4vh;
+        background: none;
+    }
+    .contact h1{
+        font-size: .8em;
+        font-family: sans-serif;
+        line-height:normal;
+        overflow-wrap: break-word;
+    }
+    .name input{
+        min-width: 210px;
+    }
+    .email input{
+        min-width: 210px;
+    }
+    .text textarea{
+        min-width: 210px;
+    }
+    button{
+        min-width: 150px;
+    }
+  
 }
 
 

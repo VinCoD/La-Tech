@@ -29,6 +29,7 @@ body{
 
 .menu ul{
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     list-style: none;
     gap: 2vw;
@@ -107,6 +108,7 @@ body{
 }
 .about-content{
     background-color: rgba(0, 0, 0, 0.37);
+    /* box-sizing: border-box; */
     padding: 5%;
     color: white;
     height: 70vh;
@@ -116,9 +118,14 @@ body{
 }
 .about-content p{
     text-align: center;
+    /* box-sizing: border-box; */
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 15vh;
     background-color: white;
     margin-bottom: 0%;
@@ -128,7 +135,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 7px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.241);
     color: white;
 
     
@@ -159,7 +166,7 @@ footer {
     border-radius: 10px;
   }
 
-  @media only screen and (max-width:1000px) {
+  @media only screen and (max-width:700px) {
       *{
           box-sizing: border-box;
       }
@@ -193,5 +200,6 @@ footer {
           justify-content: center;
           align-items: center;
       }
+
       
   }
