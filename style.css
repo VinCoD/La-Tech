@@ -24,8 +24,12 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 35%;
+    justify-content: space-between;
+    padding-right: 5%;
+    /* gap: 35%; */
+   
 }
+
 
 .menu ul{
     display: flex;
@@ -41,7 +45,10 @@ body{
     /* font-family: 'Russo One', sans-serif; */
     font-size: 1rem;
     padding: 2px;
-    border-radius: 10px;
+}
+
+.menu a i{
+    float: right;
 }
 
 .welcome-text{
@@ -96,7 +103,7 @@ body{
 }
 
 .about{
-    background-image: url('images/jogo.png');
+    background-image: url('images/image-alt-text.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -122,10 +129,6 @@ body{
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
     height: 15vh;
     background-color: white;
     margin-bottom: 0%;
@@ -180,7 +183,7 @@ footer {
           gap: 35%;
       }
       .menu ul{
-          display: none;
+          
           
       }
       .logo img{
