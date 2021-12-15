@@ -14,7 +14,7 @@ body{
     overflow-x: hidden;
 }
 
-
+/* upper section */
 .upper-container{
     display: flex;
     flex-direction: column;
@@ -24,8 +24,8 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 5%;
+    justify-content: space-around;
+    overflow-x: hidden;
     /* gap: 35%; */
    
 }
@@ -42,7 +42,7 @@ body{
 .menu ul a{
     text-decoration: none;
     color: white;
-    /* font-family: 'Russo One', sans-serif; */
+    font-family: 'Russo One', sans-serif;
     font-size: 1rem;
     padding: 2px;
 }
@@ -76,6 +76,7 @@ body{
 
 }
 
+/* read-more button */
 .read-more{
     height: 5vh;
     width: 150px;
