@@ -1,3 +1,3 @@
 function butFunc() {
-    alert("Backend unde development");
+    alert("Backend under development");
 }
