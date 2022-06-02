@@ -1,3 +1,5 @@
 function butFunc() {
-    alert("Backend under development");
+    document.body.style.backgroundColor = "dark";
+    document.body.style.color = "dark";
+    
 }
